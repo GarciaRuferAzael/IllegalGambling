@@ -1,0 +1,28 @@
+# Compilazione LaTeX
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.log
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Cartelle temporanee
+tmp/
+_build/
+latex.out/
+
+# File di backup di editor
+*~
+*.swp
+*.swo
+*.bak
