@@ -26,3 +26,6 @@ latex.out/
 *.swp
 *.swo
 *.bak
+
+# macOS
+.DS_Store
