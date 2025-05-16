@@ -7,12 +7,24 @@
 \geometry{a4paper, margin=1in}
 \usepackage{titlesec}
 \usepackage{tocbibind}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{setspace}
+\onehalfspacing % o \linespread{1.3}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\contentsname}{Indice}
+
 
 % Imposta intestazione e piè di pagina
 \pagestyle{fancy}
 \fancyhead[L]{Illegal Gambling}
 \fancyhead[R]{\thepage}
 \fancyfoot{}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
 
 \title{\textbf{Illegal Gambling}}
 \author{Azael Garcia Rufer - Riccardo Polazzi \\ Università degli Studi di Bologna \\ Ingegneria e Scienze Informatiche}
@@ -23,49 +35,209 @@
 \maketitle
 
 \begin{abstract}
-Il gioco d'azzardo illegale è un fenomeno diffuso a livello globale, con implicazioni economiche, sociali e legali significative. Questa relazione analizza le principali caratteristiche del fenomeno, i suoi impatti e le normative esistenti per contrastarlo.
+    Il gioco d’azzardo illegale costituisce un fenomeno complesso e diffuso, caratterizzato da rilevanti implicazioni economiche, sociali e giuridiche. La sua diffusione è favorita da fattori strutturali quali la deregolamentazione digitale, la presenza di reti criminali organizzate e la vulnerabilità di specifiche fasce della popolazione.
+
+    Questa relazione si propone di analizzare il fenomeno attraverso un approccio multidisciplinare, esaminando le principali forme di gioco non autorizzato, i suoi costi per la collettività, i rischi per la salute pubblica e il ruolo delle istituzioni nel contrasto al fenomeno.
+    
+    Viene dedicata particolare attenzione al contesto italiano, con riferimenti a casi concreti e dati recenti, nonché a un confronto con modelli normativi adottati a livello internazionale. L’analisi si conclude con la proposta di strategie integrate di prevenzione e controllo, fondate su tecnologie di tracciamento, cooperazione transnazionale, educazione ai rischi e politiche di riduzione del danno.
 \end{abstract}
 
 \newpage
 \tableofcontents
 \newpage
-
 \section{Introduzione}
-Il gioco d'azzardo illegale rappresenta un problema complesso che coinvolge diversi attori, dalle organizzazioni criminali ai giocatori stessi. Questo documento esplora la natura del fenomeno, le sue cause principali e le conseguenze per la società.
+
+Il gioco d’azzardo illegale rappresenta una sfida complessa e pericolosa per la società contemporanea. Non si tratta soltanto di un problema economico per individui e famiglie: spesso è anche strettamente legato ad attività criminali organizzate e a situazioni di disagio sociale. Negli ultimi anni, la diffusione delle piattaforme digitali e la riduzione dei controlli hanno favorito l’espansione di mercati paralleli, alimentando comportamenti compulsivi e contribuendo a una crescente diffidenza dell’opinione pubblica nei confronti del gioco \cite{banks2018taxonomy}.
+
+Sebbene alcune analisi abbiano evidenziato i benefici economici legati al gioco legale, numerosi studi sottolineano l’impatto negativo che il gioco d’azzardo patologico può avere sulla salute pubblica. Le persone colpite spesso commettono reati per sostenere la loro dipendenza, con gravi conseguenze anche per le famiglie coinvolte \cite{gorsane2017illegalacts, lucchini2022socialcosts}.
+
+Non va poi sottovalutato il fatto che il gioco illegale costituisce anche un canale privilegiato per attività come il riciclaggio di denaro e le frodi finanziarie. Queste pratiche hanno implicazioni significative sul sistema economico, arrivando in alcuni casi a coinvolgere istituzioni pubbliche e bancarie \cite{tarina2019moneylaundering}.
+
+Un ulteriore aspetto critico riguarda l’esposizione dei gruppi più vulnerabili, come gli adolescenti e le persone con dipendenze pregresse. La facilità di accesso alle piattaforme non regolamentate e la scarsa consapevolezza dei rischi rendono questi soggetti particolarmente suscettibili alle conseguenze del gioco incontrollato \cite{gori2014adolescentgambling, ferrara2019childrenrisk}.
+
+Questa relazione si propone di analizzare il fenomeno del gioco d’azzardo illegale da una prospettiva multidisciplinare, affrontando le sue forme più comuni, le ricadute economiche e sociali, i legami con la criminalità organizzata, il quadro normativo a livello internazionale e le principali strategie di prevenzione e intervento.
 
 \section{Tipologie di Gioco d'Azzardo Illegale}
+
+Il gioco d'azzardo illegale assume molteplici forme, spesso strettamente legate al contesto socioeconomico e al livello di regolamentazione presente nei vari Paesi. Esso si differenzia dal gioco legale per l’assenza di autorizzazioni statali, la mancanza di controlli fiscali e di tutela per i giocatori, e per il frequente coinvolgimento della criminalità organizzata. Le forme principali sono descritte di seguito.
+
 \subsection{Scommesse clandestine}
+
+Le scommesse clandestine sono una delle espressioni più diffuse del gioco d’azzardo illegale. Consistono nell’accettazione di puntate su eventi sportivi o altre manifestazioni (ad esempio corse ippiche o eventi politici) senza alcuna licenza ufficiale o autorizzazione amministrativa. In molti casi, tali attività sono gestite da gruppi criminali che le utilizzano come strumenti per il riciclaggio di denaro proveniente da attività illecite \cite{lucchini2022socialcosts, banks2018taxonomy}.
+Le lotterie illegali rappresentano una forma storica e ancora attuale di gioco clandestino, spesso radicata in contesti di marginalità economica o sociale. Queste attività possono avvenire tramite la vendita di biglietti “fatti in casa” o la raccolta manuale di numeri e puntate, senza alcun sistema ufficiale di verifica o garanzia. In molti casi, i premi sono inferiori a quelli promessi, o non vengono mai erogati.
+
 \subsection{Casinò non autorizzati}
+
+I casinò non autorizzati operano senza alcuna licenza statale e rappresentano una forma particolarmente pericolosa di gioco d’azzardo illegale. Queste strutture possono assumere l’aspetto di locali notturni, circoli “culturali” o abitazioni private, che in realtà nascondono attività illecite. In tali contesti, l’assenza di norme di sicurezza e di tutela dei consumatori espone i giocatori a rischi elevati.
+
+Tali casinò non solo eludono completamente i controlli fiscali, ma offrono anche l’ambiente ideale per lo svolgimento di altre attività criminali come usura, spaccio di droga e riciclaggio di denaro.
+
+\textbf{Fonte:} \textit{Prevention of Criminal Acts of Money Laundering, pp. 45--46} \cite{tarina2019moneylaundering}
+
 \subsection{Giochi online non regolamentati}
-\subsection{Lotterie illegali}
+
+Il gioco d’azzardo online costituisce una frontiera in rapida espansione dell’illegalità. Nonostante la presenza di sistemi di regolazione nei singoli Paesi, molti portali web operano da giurisdizioni estere dove la normativa è assente o estremamente blanda. Tali siti accettano scommesse da utenti italiani o europei senza avere le necessarie concessioni e senza rispettare i requisiti di trasparenza, prevenzione della dipendenza e tutela dei minori.
+
+La facilità di accesso, unita all’apparente legalità dell’interfaccia utente, rende difficile distinguere tra portali autorizzati e illegali. In particolare, i giovani risultano particolarmente vulnerabili: secondo una ricerca italiana, il 53,5\% dei minorenni ha già partecipato ad almeno un’attività di gioco, nonostante i divieti legislativi.
+
+\textbf{Fonte:} \textit{Relationship Between Gambling Severity and Attitudes, pp. 3--4} \cite{gori2014adolescentgambling}; \textit{The Risk of Gambling Disorders in Children, pp. 4--5} \cite{ferrara2019childrenrisk}
 
 \section{Impatto del Gioco d'Azzardo Illegale}
+
+Il gioco d’azzardo illegale genera una vasta gamma di conseguenze negative che si estendono ben oltre il singolo giocatore, coinvolgendo famiglie, comunità locali, istituzioni pubbliche e sistemi economici. Gli impatti possono essere suddivisi in almeno quattro grandi categorie: economici, sociali, legati alla criminalità organizzata e sanitari. 
+
 \subsection{Effetti economici}
+
+L’impatto economico del gioco d’azzardo illegale è particolarmente rilevante in termini di evasione fiscale, perdite per lo Stato e distorsione del mercato regolamentato. Secondo uno studio condotto in Italia, come vedremo dopo nel dettaglio, i costi sociali associati al gioco patologico superano i 2,3 miliardi di euro l’anno. Tali stime includono costi diretti come trattamenti sanitari, interventi sociali e spese legali, ma anche costi indiretti legati alla perdita di produttività, disoccupazione e impatti sulle famiglie \textit{(Social Costs of Gambling Harm in Italy, pp. 72--73)} \cite{lucchini2022socialcosts}.
+
+Tuttavia, questa cifra rappresenta un valore fortemente sottostimato, poiché non include i costi associati ai giocatori a basso e medio rischio, né quelli sostenuti dagli “altri significativi” (familiari, amici, colleghi), che spesso subiscono anch’essi ripercussioni economiche e psicologiche.
+
 \subsection{Conseguenze sociali}
+
+Il gioco d’azzardo illegale è associato a un marcato deterioramento delle relazioni personali, familiari e lavorative. Nei casi più gravi, si osservano rotture familiari, perdita della custodia dei figli, isolamento sociale e indebitamento estremo. In ambito adolescenziale, è stato rilevato che più della metà dei minori italiani (53,5\%) ha partecipato almeno una volta ad attività di gioco, nonostante i divieti legislativi. Questo dato è particolarmente preoccupante in quanto il gioco in giovane età è correlato a una maggiore probabilità di sviluppare comportamenti patologici in età adulta dovuti dalla promessa di guadagni facili che rappresentano una tentazione concreta e pericolosa \textit{(Relationship Between Gambling Severity and Attitudes, pp. 3--4)} \cite{gori2014adolescentgambling}.
+
 \subsection{Collegamenti con la criminalità organizzata}
+
+Molti studi evidenziano il legame strutturale tra gioco d’azzardo illegale e organizzazioni criminali. In particolare, le attività illecite nel settore del gioco costituiscono un importante canale per il riciclaggio di denaro proveniente da traffico di droga, estorsione e corruzione. La possibilità di inserire somme di denaro in circuiti “puliti”, ad esempio attraverso scommesse fittizie o false vincite, rende il settore particolarmente attraente per le mafie \textit{(A Taxonomy of Gambling Related Crime, pp. 5--7)} \cite{banks2018taxonomy}; \textit{(Prevention of Criminal Acts of Money Laundering, pp. 45--46)} \cite{tarina2019moneylaundering}.
+
+Inoltre, in contesti dove la regolamentazione è debole o frammentata, le organizzazioni criminali riescono a operare indisturbate, controllando intere filiere di scommesse e sale giochi non autorizzate, e guadagnando consenso sociale grazie alla redistribuzione illecita della ricchezza.
+
 \subsection{Rischi per i giocatori}
 
+Chi partecipa a circuiti di gioco illegali è esposto a rischi molto più elevati rispetto a chi gioca in ambienti regolamentati. Oltre alla possibilità di cadere vittima di truffe, questi giocatori spesso sviluppano una forma di dipendenza incontrollata, aggravata dall’assenza di sistemi di tutela o di accesso a percorsi di aiuto. Nei casi più gravi, il bisogno urgente di denaro può spingerli a commettere reati come furti, frodi o appropriazioni indebite, soprattutto se soffrono già di disturbo da gioco d’azzardo \cite{gorsane2017illegalacts}.
+
+Secondo alcune ricerche cliniche, i giocatori coinvolti in attività illegali mostrano spesso gravi vulnerabilità, come condizioni economiche precarie e disturbi psichiatrici, che li espongono a un rischio maggiore di ricadute e rendono più difficile l’adesione a percorsi terapeutici efficaci.
+
+Tutto ciò si aggrava tra gli adolescenti, i quali tendono a sottovalutare i pericoli legati al gioco, soprattutto quando esso è socialmente accettato dai coetanei. La mancanza di consapevolezza, unita alla fragilità emotiva tipica dell’età, può favorire l’insorgenza precoce di comportamenti patologici \cite{ferrara2019childrenrisk}.
+
+
 \section{Normative e Legislazione Internazionale}
-\subsection{Regolamentazioni negli Stati Uniti}
+
+La regolamentazione del gioco d’azzardo illegale varia ampiamente a livello globale, rispecchiando differenti approcci culturali, giuridici ed economici. Alcuni Paesi adottano normative permissive volte a incanalare il gioco entro circuiti legali e controllati, mentre altri optano per un approccio proibizionista che, però, può favorire la nascita di mercati clandestini. In questa sezione verranno analizzate le principali esperienze normative negli Stati Uniti, in Europa, in Asia e il ruolo degli organismi internazionali.
+
 \subsection{Normative Europee}
+
+In Europa, la regolamentazione del gioco d’azzardo varia notevolmente da Paese a Paese, riflettendo approcci e filosofie giuridiche differenti. Alcuni Stati, come Italia, Francia e Germania, hanno scelto di mantenere un controllo centrale sull’offerta di gioco, concedendo licenze attraverso lo Stato o enti pubblici. Questo sistema mira a garantire legalità, tutela dei consumatori e controllo sui flussi finanziari legati al gioco.
+
+Al contrario, altri Paesi — tra cui il Regno Unito — hanno adottato un modello più liberale, dove il gioco è permesso anche agli operatori privati, purché rispettino le normative stabilite da autorità di vigilanza indipendenti (come la UK Gambling Commission). Questo approccio favorisce la concorrenza ma richiede una sorveglianza costante.
+
+Un’area particolarmente delicata è quella del gioco online, che ha spinto molti Stati a rafforzare le proprie normative. In Germania, ad esempio, è stato introdotto il Trattato Interstatale sul Gioco (GlüStV), che impone forti restrizioni agli operatori esteri, limitando il loro accesso al mercato nazionale. Tuttavia, questa strategia ha suscitato critiche, poiché alcuni utenti tedeschi — non trovando offerte legali soddisfacenti — si sono rivolti a siti non autorizzati, spesso meno sicuri e non soggetti a controlli.
+
+In Francia, invece, l’Autorité Nationale des Jeux (ANJ) ha adottato misure più severe per combattere il gioco illegale: tra queste, il blocco degli indirizzi IP dei siti non autorizzati, l’imposizione di multe e, in alcuni casi, pene detentive per gli operatori che violano la legge. L’ANJ ha inoltre identificato più di 550 siti web illegali attivi sul territorio, dimostrando quanto il fenomeno sia ancora diffuso nonostante la regolamentazione.
+
+\subsection{Regolamentazioni negli Stati Uniti}
+
+Negli Stati Uniti, la regolamentazione del gioco d’azzardo è altamente frammentata. Ogni Stato ha la facoltà di decidere quali forme di gioco autorizzare e in quali contesti. Questo ha portato alla coesistenza di mercati legali molto sviluppati, come quelli del Nevada e del New Jersey, con altri Stati che mantengono forti restrizioni. Tuttavia, anche nei contesti più permissivi, le attività illecite condotte da organizzazioni criminali continuano a proliferare.
+\textit{(cfr. \textbf{A Taxonomy of Gambling Related Crime}, pp. 5--7)} \cite{banks2018taxonomy}
+
 \subsection{Legislazione in Asia e altre regioni}
+
+In Asia, il gioco d’azzardo è spesso vietato per legge, ma rimane comunque molto diffuso, sia in forma clandestina che attraverso strutture ufficiali infiltrate da gruppi criminali. Un caso significativo è quello di Macao, dove diversi studi hanno evidenziato il coinvolgimento sistematico della criminalità organizzata nei casinò locali.
+
+In molte aree del Sud-est asiatico e in alcune province cinesi, l’assenza di regole chiare e controlli efficaci ha favorito la nascita di un’economia sommersa del gioco, rendendo difficile distinguere tra ciò che è legale e ciò che non lo è.
+
 \subsection{Ruolo delle organizzazioni internazionali}
 
+Le organizzazioni internazionali giocano un ruolo chiave nel contrasto al gioco d’azzardo illegale, promuovendo la cooperazione tra Stati. La Commissione Europea ha emanato raccomandazioni per uniformare le normative, tutelare i consumatori e prevenire il riciclaggio di denaro \cite{lucchini2022socialcosts}.
+
+Anche le Nazioni Unite e Interpol considerano il gioco illegale una forma di criminalità economica transnazionale, evidenziando l'importanza di sistemi informativi condivisi e azioni coordinate a livello globale \cite{banks2018taxonomy}.
+
+
 \section{Strategie di Prevenzione e Controllo}
+
+Affrontare il problema del gioco d’azzardo illegale non è semplice: richiede un insieme coordinato di azioni che coinvolgono tecnologia, cooperazione internazionale, educazione e attenzione alla salute pubblica. Di seguito, vengono illustrate alcune delle principali strategie adottate o suggerite in diversi contesti per prevenire e contenere il fenomeno.
+
 \subsection{Tecnologie per il monitoraggio delle transazioni}
+
+La tecnologia gioca un ruolo fondamentale nel rilevare le attività illecite legate al gioco. Attraverso sistemi avanzati di monitoraggio, le autorità sono in grado di individuare movimenti di denaro sospetti, sia nei circuiti fisici che online. In particolare, l'analisi automatica delle transazioni aiuta a scoprire flussi di denaro anomali o operazioni in zone a rischio.
+
+In Italia, l’Agenzia delle Dogane e dei Monopoli ha già messo in campo strumenti, ormai essenziali, per rilevare apparecchi non autorizzati e controllare i flussi di gioco \textit{(Social Costs of Gambling Harm in Italy, p. 79)} \cite{lucchini2022socialcosts}.
+
 \subsection{Collaborazione tra governi e piattaforme digitali}
+
+Dal momento che il gioco online non conosce confini, è cruciale che le autorità nazionali collaborino tra loro e con le grandi piattaforme digitali. Solo attraverso una rete internazionale ben coordinata è possibile bloccare i siti illegali e tutelare i giocatori.
+
+Sempre Lucchini e Comi sottolineano come sia necessario coinvolgere anche banche e fornitori di servizi di pagamento per fermare le transazioni verso operatori non autorizzati. La creazione di black-list condivise potrebbe rappresentare un passo importante in questa direzione \textit{(Social Costs of Gambling Harm in Italy, pp. 79--80)} \cite{lucchini2022socialcosts}.
+
 \subsection{Educazione e sensibilizzazione}
-\subsection{Politiche di riduzione del danno}
+
+Un altro pilastro fondamentale è l’educazione. Informare i giovani, le famiglie e le scuole sui rischi del gioco può davvero fare la differenza. La prevenzione, infatti, parte dalla conoscenza.
+
+E' importante sottolineare quanto sia urgente promuovere percorsi educativi specifici e campagne di sensibilizzazione, i quali dovranno mettere in guardia i giovani e fornire consapevolezza sui rischi e sulle misure di protezione disposibili. Le misure più efficaci includono limiti di spesa, possibilità di autoescludersi dai siti, supporto psicologico gratuito e servizi sul territorio facilmente accessibili. E' fondamentale quindi adottare un approccio di salute pubblica che tenga conto non solo degli aspetti clinici, ma anche di quelli sociali, puntando su servizi accoglienti e privi di giudizio \textit{(Social Costs of Gambling Harm in Italy, pp. 77--80)} \cite{lucchini2022socialcosts}.
+
+\section{Caso di Studio}
+
+L’analisi di casi concreti consente di comprendere la complessità e le molteplici sfaccettature del gioco d’azzardo illegale. Di seguito vengono presentati due esempi emblematici: uno italiano e uno internazionale, entrambi rappresentativi delle strategie adottate per il contrasto al fenomeno.
+
+\subsection{Operazione italiana contro le scommesse illegali}
+In Italia, diverse operazioni giudiziarie hanno rivelato l’ampiezza delle reti di scommesse clandestine collegate alla criminalità organizzata. Le autorità hanno scoperto circuiti paralleli che utilizzano piattaforme online non autorizzate, spesso con sede all’estero, per raccogliere scommesse illegali. In collaborazione con l’Agenzia delle Dogane e dei Monopoli, sono stati sequestrati centinaia di terminali installati in bar e circoli privati, utilizzati per evadere il fisco e riciclare denaro proveniente da attività illecite \cite{lucchini2022socialcosts}.
+
+Un caso recente e particolarmente mediatico è quello che ha coinvolto diversi calciatori professionisti italiani, tra cui Nicolò Fagioli (Juventus), Sandro Tonali (all’epoca Newcastle, ex Milan) e Nicola Zalewski (Roma), tutti indagati nel 2023 per aver effettuato scommesse su piattaforme illegali. Le indagini, avviate dalla Procura di Torino, hanno rivelato che alcuni di questi atleti avevano accumulato debiti importanti, che cercavano di nascondere anche ai propri club. Le piattaforme utilizzate erano prive di qualsiasi autorizzazione ADM e venivano impiegate anche per scommettere su eventi calcistici, violando i regolamenti sportivi. Il caso ha riacceso il dibattito sull’accesso facilitato al gioco illegale, anche da parte di soggetti privilegiati e ben informati, e sulla necessità di rafforzare la prevenzione anche all’interno delle istituzioni sportive.
+
+\subsection{Inchiesta internazionale: il caso delle videolottery in Brasile}
+
+Un altro caso rilevante si è verificato in Brasile, dove migliaia di macchine da gioco illegali (videopoker e slot) sono state sequestrate dalla polizia in operazioni coordinate. Questi dispositivi, inizialmente destinati alla distruzione, sono stati in parte riconvertiti in strumenti educativi grazie a un progetto universitario promosso dalla Southern University of Santa Catarina.
+
+Le schede elettroniche, i monitor e le componenti dei videopoker sono state riutilizzate per assemblare computer da destinare a scuole pubbliche, centri giovanili e programmi di inclusione digitale per bambini e ragazzi con bisogni educativi speciali. Il progetto ha permesso di trasformare un simbolo di devianza e illegalità in una risorsa per la comunità locale \textit{(cfr. \textbf{From Cheating to Teaching}, pp. 10--11)} \cite{bento2010cheating}
+
+Questo caso dimostra come, oltre alla repressione, possano essere adottate strategie di riutilizzo sociale che uniscono legalità, innovazione tecnologica e inclusione.
 
 \section{Conclusioni}
-Il contrasto al gioco d'azzardo illegale richiede un approccio multidisciplinare che coinvolga governi, forze dell'ordine e istituzioni finanziarie. L'adozione di normative più severe e l'utilizzo di strumenti tecnologici avanzati possono contribuire a ridurre l'impatto di questo fenomeno.
 
-\section{Riferimenti}
-\begin{thebibliography}{9}
-    \bibitem{who} World Health Organization. (2022). Report on Gambling Disorders.
-    \bibitem{eu} European Commission. (2023). Online Gambling Regulations.
-    \bibitem{us} U.S. Department of Justice. (2021). Illegal Gambling Enforcement Policies.
-    \bibitem{un} United Nations Office on Drugs and Crime. (2023). Organized Crime and Gambling.
+Il gioco d’azzardo illegale rappresenta una minaccia concreta e trasversale che incide profondamente sul tessuto sociale, economico e istituzionale del Paese. A renderlo così pervasivo contribuiscono diversi fattori: l’accesso facilitato al gioco online, l’interesse delle organizzazioni criminali, la fragilità economica e psicologica di molti individui e le difficoltà delle autorità nel controllare un fenomeno che muta rapidamente.
+
+I costi sociali sono elevati e vanno ben oltre le cifre economiche. In Italia, si stima che le ricadute superino i 2,3 miliardi di euro l’anno, includendo spese per la sanità pubblica, l’assistenza sociale e il sistema giudiziario \cite{lucchini2022socialcosts}. Ma accanto ai numeri, ci sono storie di isolamento, indebitamento e sofferenza che colpiscono non solo i giocatori patologici, ma anche le loro famiglie \cite{gorsane2017illegalacts}.
+
+Di particolare allarme è il coinvolgimento degli adolescenti: una fascia d’età vulnerabile e poco protetta, dove oltre la metà dei giovani ha già sperimentato forme di gioco. In molti casi, ciò avviene su piattaforme non autorizzate, con gravi conseguenze sullo sviluppo personale e relazionale \cite{gori2014adolescentgambling}.
+
+A livello normativo, sebbene vi siano approcci differenti tra i Paesi, emerge una linea comune basata sul rafforzamento del controllo digitale, sulla tracciabilità delle transazioni e sulla cooperazione internazionale per fronteggiare i flussi illeciti e oscurare i siti non autorizzati \cite{banks2018taxonomy}. Tuttavia, nessuna misura repressiva può essere efficace da sola.
+
+Per contrastare il gioco illegale è necessario un approccio integrato e sistemico, fondato su:
+
+\begin{itemize}
+\item il potenziamento degli strumenti tecnologici per il monitoraggio delle attività sospette;
+\item la diffusione di programmi educativi e campagne di prevenzione rivolti soprattutto ai giovani;
+\item una rete efficiente di servizi sociali accessibili e una cooperazione tra istituzioni nazionali e organismi internazionali;
+\end{itemize}
+
+Solo attraverso un’azione condivisa, capillare e orientata alla prevenzione sarà possibile arginare il fenomeno e tutelare le persone più esposte, costruendo un ambiente di gioco sicuro, trasparente e rispettoso della dignità umana.
+
+\newpage
+\begin{thebibliography}{99}
+
+\bibitem{banks2018taxonomy}
+Banks, J., \& Waugh, D. (2018). \textit{A Taxonomy of Gambling Related Crime}. International Gambling Studies. 
+(PDF: \texttt{A\_taxonomy\_of\_gambling\_related\_crime.pdf})
+
+\bibitem{bento2010cheating}
+Bento da Silva, J., Alves, G. R., \& Mota Alves, J. B. (2010). \textit{From Cheating to Teaching: A Path for Conversion of Illegal Gambling Machines}. eLearning Papers, 19.
+(PDF: \texttt{From\_cheating\_to\_teaching\_a\_path\_for\_con.pdf})
+
+\bibitem{gorsane2017illegalacts}
+Gorsane, M. A., et al. (2017). \textit{Gambling disorder-related illegal acts: Regression model of associated factors}. Journal of Behavioral Addictions, 6(1), 64–73.
+(PDF: \texttt{Gambling\_disorder\_related\_illegal\_acts\_R.pdf})
+
+\bibitem{tarina2019moneylaundering}
+Tarina, D. D. Y., Dinanti, D., \& Sakti, M. (2019). \textit{Prevention of Criminal Acts of Money Laundering in Banks}. Asia Pacific Fraud Journal, 4(1), 44–59.
+(PDF: \texttt{Prevention\_of\_Criminal\_Acts\_of\_Money\_Lau.pdf})
+
+\bibitem{matilainen2017finland}
+Matilainen, R. (2017). \textit{Production and Consumption of Recreational Gambling in Twentieth-Century Finland}. Doctoral Dissertation, University of Helsinki.
+(PDF: \texttt{Production\_and\_consumption\_of\_recreation.pdf})
+
+\bibitem{gori2014adolescentgambling}
+Gori, M., et al. (2014). \textit{Relationship Between Gambling Severity and Attitudes in Adolescents: Findings from a Population-Based Study}. Journal of Gambling Studies.
+(PDF: \texttt{Relationship\_Between\_Gambling\_Severity\_a.pdf})
+
+\bibitem{lucchini2022socialcosts}
+Lucchini, F., \& Comi, S. L. (2022). \textit{Social Costs of Gambling Harm in Italy}. Critical Gambling Studies, 3(1), 71–82. 
+(PDF: \texttt{Social\_Costs\_of\_Gambling\_Harm\_in\_Italy.pdf})
+
+\bibitem{ferrara2019childrenrisk}
+Ferrara, P., et al. (2019). \textit{The Risk of Gambling Disorders in Children and Adolescents}. The Journal of Pediatrics.
+(PDF: \texttt{The\_Risk\_of\_Gambling\_Disorders\_in\_Childr.pdf})
+
 \end{thebibliography}
+
 
 \end{document}
